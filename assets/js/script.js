@@ -57,7 +57,7 @@ function generatePassword() {
             getRandomSymbol();
             console.log(getRandomSymbol);
           }
-    //return password
+    return password;
 }
 
 //create functions that contain arrays for randomized characters
