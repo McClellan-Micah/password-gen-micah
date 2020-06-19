@@ -1,12 +1,9 @@
 // Assignment code here
 
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 function generatePassword() {
-    //create empty array for password
     var password = [];
-    
     var confirmLength = window.prompt("Choose between 8 and 128 characters for your password.");
         confirmLength = parseInt(confirmLength);
         if (confirmLength >= 8 && confirmLength <= 128) { 
@@ -15,7 +12,6 @@ function generatePassword() {
             window.alert("Not a valid entry");
             return generatePassword();
           }
-    //create if statements to grab random functions
     var confirmLower = window.confirm("Would you like to include lowercase letters in your password?");
         console.log("Lowercase: " + confirmLower);
         if (confirmLower = true) {
@@ -60,7 +56,6 @@ function generatePassword() {
     return password;
 }
 
-//create functions that contain arrays for randomized characters
 function getRandomLower() {
     const getRandomLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     return getRandomLower[Math.floor(Math.random() * getRandomLower.length)];
@@ -80,7 +75,6 @@ function getRandomSymbol() {
     const getRandomSymbol = ["!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", " ", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^","_", "`", "{", "|", "}", "~"];
     return getRandomSymbol[Math.floor(Math.random() * getRandomSymbol.length)]; 
 }
-
 
 // Write password to the #password input
 function writePassword() {
