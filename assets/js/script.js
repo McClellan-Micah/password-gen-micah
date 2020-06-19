@@ -56,8 +56,11 @@ function generatePassword() {
     return password;
 }
 
+//test split method on array to make final password into string
 function getRandomLower() {
-    const getRandomLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    const getRandomLower = ["a b c d e f g h i j k l m n o p q r s t u v w x y z"];
+    var lower = getRandomLower.split(" ");
+    console.log(lower);
     return getRandomLower[Math.floor(Math.random() * getRandomLower.length)];
 }
 
