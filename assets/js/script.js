@@ -18,16 +18,45 @@ function generatePassword() {
           }
     var confirmLower = window.confirm("Would you like to include lowercase letters in your password?");
         console.log("Lowercase: " + confirmLower);
-
+        if (confirmLower = true) {
+            for (var i = 0; i < (confirmLength /4); i++) {
+              var lowercaseLetter = getRandomLower();
+              password.push(lowercaseLetter);
+            }
+            getRandomLower();
+            console.log(getRandomLower);
+          }
     var confirmUpper = window.confirm("Would you like to include uppercase letters in your password?");
         console.log("Uppercase: " + confirmUpper);
-
+        if (confirmUpper = true) {
+            for (var i = 0; i < (confirmLength /4); i++) {
+              var uppercaseLetter = getRandomUpper();
+              password.push(uppercaseLetter);
+            }
+            getRandomUpper();
+            console.log(getRandomUpper);
+          }
     var confirmNumeric = window.confirm("Would you like to include numbers in your password?");
         console.log("Numbers: " + confirmNumeric);
-
+        if (confirmNumeric = true) {
+            for (var i = 0; i < (confirmLength /4); i++) {
+              var numbers = getRandomNumber();
+              password.push(numbers);
+            }
+            getRandomNumber();
+            console.log(getRandomNumber);
+          }
     var confirmSymbol = window.confirm("Would you like to include special characters in your password?");
         console.log("Symbols: " + confirmSymbol);
-
+        if (confirmSymbol = true) {
+            for (var i = 0; i < (confirmLength /4); i++) {
+              var symbols = getRandomSymbol();
+              password.push(symbols);
+            }
+            alert("Password: " + password);
+            getRandomSymbol();
+            console.log(getRandomSymbol);
+          }
     //return password
 }
 
