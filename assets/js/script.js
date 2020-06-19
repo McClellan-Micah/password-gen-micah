@@ -10,7 +10,12 @@ function generatePassword() {
     //create if statements to grab random functions
     var confirmLength = window.prompt("Choose between 8 and 128 characters for your password.");
         confirmLength = parseInt(confirmLength);
-
+        if (confirmLength >= 8 && confirmLength <= 128) { 
+            console.log("Character amount: " + confirmLength);
+          } else {
+            window.alert("Not a valid entry");
+            return generatePassword();
+          }
     var confirmLower = window.confirm("Would you like to include lowercase letters in your password?");
         console.log("Lowercase: " + confirmLower);
 
