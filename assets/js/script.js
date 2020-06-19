@@ -6,8 +6,7 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
     //create empty array for password
     var password = [];
-
-    //create if statements to grab random functions
+    
     var confirmLength = window.prompt("Choose between 8 and 128 characters for your password.");
         confirmLength = parseInt(confirmLength);
         if (confirmLength >= 8 && confirmLength <= 128) { 
@@ -16,6 +15,7 @@ function generatePassword() {
             window.alert("Not a valid entry");
             return generatePassword();
           }
+    //create if statements to grab random functions
     var confirmLower = window.confirm("Would you like to include lowercase letters in your password?");
         console.log("Lowercase: " + confirmLower);
         if (confirmLower = true) {
@@ -24,7 +24,7 @@ function generatePassword() {
               password.push(lowercaseLetter);
             }
             getRandomLower();
-            console.log(getRandomLower);
+            //console.log(getRandomLower);
           }
     var confirmUpper = window.confirm("Would you like to include uppercase letters in your password?");
         console.log("Uppercase: " + confirmUpper);
@@ -34,7 +34,7 @@ function generatePassword() {
               password.push(uppercaseLetter);
             }
             getRandomUpper();
-            console.log(getRandomUpper);
+            //console.log(getRandomUpper);
           }
     var confirmNumeric = window.confirm("Would you like to include numbers in your password?");
         console.log("Numbers: " + confirmNumeric);
@@ -44,7 +44,7 @@ function generatePassword() {
               password.push(numbers);
             }
             getRandomNumber();
-            console.log(getRandomNumber);
+            //console.log(getRandomNumber);
           }
     var confirmSymbol = window.confirm("Would you like to include special characters in your password?");
         console.log("Symbols: " + confirmSymbol);
@@ -55,7 +55,7 @@ function generatePassword() {
             }
             alert("Password: " + password);
             getRandomSymbol();
-            console.log(getRandomSymbol);
+            //console.log(getRandomSymbol);
           }
     return password;
 }

@@ -25,6 +25,6 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
 Link to deployed application:
+![Password-Generator] (https://mcclellan-micah.github.io/password-gen-micah/)
 
-
-Screenshot: 
+Screenshot:  ![Screenshot] (./assets/images/password-gen-screenshot.png)
